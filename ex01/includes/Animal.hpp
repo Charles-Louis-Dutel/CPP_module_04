@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cdutel <cdutel@student.42.fr>              +#+  +:+       +#+        */
+/*   By: cdutel <cdutel@42student.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 17:00:00 by cdutel            #+#    #+#             */
-/*   Updated: 2024/12/12 19:23:36 by cdutel           ###   ########.fr       */
+/*   Updated: 2025/01/03 13:43:34 by cdutel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,25 @@
 
 # include <iostream>
 # include <string>
+# include <cstdlib>
 # include "Brain.hpp"
 
-class   Animal
+class	Animal
 {
-    public:
-        Animal(void);
-        Animal(Animal const &copy);
-        virtual ~Animal(void);
+	public:
+		Animal(void);
+		Animal(Animal const &copy);
+		virtual ~Animal(void);
 
-        Animal &operator=(Animal const &inst);
+		Animal &operator=(Animal const &inst);
 
-        std::string    getType(void) const;
-        void           setType(std::string animal_type);
-        virtual void   makeSound(void) const;
-        virtual void   BrainIdeas(void) const;
-    
-    protected:
-        std::string _type;
-        Brain       *_brain_type;
+		std::string		getType(void) const;
+		void			setType(std::string animal_type);
+		virtual void	makeSound(void) const;
+
+
+	protected:
+		std::string _type;
 };
 
 
