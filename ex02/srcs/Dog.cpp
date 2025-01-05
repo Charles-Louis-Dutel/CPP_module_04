@@ -6,7 +6,7 @@
 /*   By: cdutel <cdutel@42student.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 17:38:19 by cdutel            #+#    #+#             */
-/*   Updated: 2025/01/03 14:44:35 by cdutel           ###   ########.fr       */
+/*   Updated: 2025/01/05 17:42:48 by cdutel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ Dog	&Dog::operator=(Dog const &inst)
 	if (this != &inst)
 	{
 		this->_type = inst._type;
+		// if (this->_dog_brain)
+		// 	delete this->_dog_brain;
 		this->_dog_brain = new Brain();
 		if (!this->_dog_brain)
 		{

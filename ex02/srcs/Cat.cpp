@@ -6,7 +6,7 @@
 /*   By: cdutel <cdutel@42student.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 15:37:02 by cdutel            #+#    #+#             */
-/*   Updated: 2025/01/03 14:44:21 by cdutel           ###   ########.fr       */
+/*   Updated: 2025/01/05 17:42:53 by cdutel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ Cat	 &Cat::operator=(Cat const &inst)
 	if (this != &inst)
 	{
 		this->_type = inst._type;
+		// if (this->_cat_brain)
+		// 	delete this->_cat_brain;
 		this->_cat_brain = new Brain();
 		if (!this->_cat_brain)
 		{

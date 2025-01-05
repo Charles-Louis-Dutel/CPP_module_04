@@ -1,11 +1,10 @@
 NAME = animal_brain
 C = c++
-CFLAGS = -Wshadow -Wall -Wextra -Werror -g -std=c++98 -MMD 
+CFLAGS = -Wshadow -Wall -Wextra -Werror -g -std=c++98 -MMD
 
 ############################Sources########################
 SRCS_DIR = srcs/
-FILES = main Animal Cat Dog WrongAnimal WrongCat Brain
-
+FILES = main AAnimal Cat Dog WrongAnimal WrongCat Brain
 
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .cpp, $(FILES)))
 ###########################Objects#########################

@@ -6,14 +6,14 @@
 /*   By: cdutel <cdutel@42student.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 17:33:56 by cdutel            #+#    #+#             */
-/*   Updated: 2025/01/03 14:45:25 by cdutel           ###   ########.fr       */
+/*   Updated: 2025/01/05 17:41:24 by cdutel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DOG_HPP
 # define DOG_HPP
 
-# include "Animal.hpp"
+# include "AAnimal.hpp"
 # include "Brain.hpp"
 # include <iostream>
 # include <string>

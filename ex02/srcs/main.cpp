@@ -6,11 +6,11 @@
 /*   By: cdutel <cdutel@42student.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 16:58:28 by cdutel            #+#    #+#             */
-/*   Updated: 2025/01/03 14:46:50 by cdutel           ###   ########.fr       */
+/*   Updated: 2025/01/05 17:40:45 by cdutel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/Animal.hpp"
+#include "../includes/AAnimal.hpp"
 #include "../includes/Dog.hpp"
 #include "../includes/Cat.hpp"
 #include "../includes/WrongAnimal.hpp"
