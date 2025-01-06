@@ -6,7 +6,7 @@
 /*   By: cdutel <cdutel@42student.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 15:37:02 by cdutel            #+#    #+#             */
-/*   Updated: 2025/01/03 13:36:48 by cdutel           ###   ########.fr       */
+/*   Updated: 2025/01/06 10:32:49 by cdutel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,15 @@ Cat::Cat(void) : Animal()
 
 Cat::Cat(Cat const &copy) : Animal(copy)
 {
-	std::cout << "Dog copy constructor called" << std::endl;
-	*this = copy;
+	std::cout << "Cat copy constructor called" << std::endl;
+	this->_type = copy._type;
+	this->_cat_brain = new Brain();
+	if (!this->_cat_brain)
+	{
+		std::cerr << "Error allocating cat brain" << std::endl;
+		exit(1);
+	}
+	this->_cat_brain = copy._cat_brain;
 }
 
 Cat::~Cat(void)
@@ -42,6 +49,8 @@ Cat	 &Cat::operator=(Cat const &inst)
 	if (this != &inst)
 	{
 		this->_type = inst._type;
+		if (this->_cat_brain)
+			delete this->_cat_brain;
 		this->_cat_brain = new Brain();
 		if (!this->_cat_brain)
 		{

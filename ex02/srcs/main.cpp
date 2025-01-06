@@ -6,7 +6,7 @@
 /*   By: cdutel <cdutel@42student.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 16:58:28 by cdutel            #+#    #+#             */
-/*   Updated: 2025/01/05 17:40:45 by cdutel           ###   ########.fr       */
+/*   Updated: 2025/01/06 10:29:27 by cdutel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 int	main(void)
 {
-	// const AAnimal	*test = new AAnimal();
+	//const AAnimal	*test = new AAnimal();
 	const AAnimal	*tab[6];
 
 	for (int i = 0; i < 6; i++)
@@ -92,6 +92,5 @@ int	main(void)
 
 	delete idefix;
 	delete milou;
-
 	return (0);
 }
