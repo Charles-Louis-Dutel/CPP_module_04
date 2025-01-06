@@ -6,7 +6,7 @@
 /*   By: cdutel <cdutel@42student.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 12:06:48 by cdutel            #+#    #+#             */
-/*   Updated: 2025/01/05 17:33:01 by cdutel           ###   ########.fr       */
+/*   Updated: 2025/01/06 16:06:27 by cdutel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,24 @@
 
 Cure::Cure(void) : AMateria()
 {
-	std::cout << "Cure default constructor called" << std::endl;
+	std::cout << "\033[32mCure default constructor called\033[0m" << std::endl;
 	this->_type = "cure";
 }
 
 Cure::Cure(std::string const &type) : AMateria(type)
 {
-	std::cout << "Cure constructor called" << std::endl;
+	std::cout << "\033[32mCure constructor called\033[0m" << std::endl;
 }
 
 Cure::Cure(Cure const &copy) : AMateria(copy)
 {
-	std::cout << "Cure copy constructor called" << std::endl;
+	std::cout << "\033[32mCure copy constructor called\033[0m" << std::endl;
 	*this = copy;
 }
 
 Cure::~Cure(void)
 {
-	std::cout << "Cure destructor called" << std::endl;
+	std::cout << "\033[31mCure destructor called\033[0m" << std::endl;
 }
 
 

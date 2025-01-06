@@ -6,7 +6,7 @@
 /*   By: cdutel <cdutel@42student.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 10:29:40 by cdutel            #+#    #+#             */
-/*   Updated: 2025/01/05 17:32:25 by cdutel           ###   ########.fr       */
+/*   Updated: 2025/01/06 16:04:16 by cdutel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,23 @@
 
 AMateria::AMateria(void)
 {
-	std::cout << "AMateria default constructor called" << std::endl;
+	std::cout << "\033[32mAMateria default constructor called\033[0m" << std::endl;
 }
 
 AMateria::AMateria(std::string const &type) : _type(type)
 {
-	std::cout << "AMateria constructor called" << std::endl;
+	std::cout << "\033[32mAMateria constructor called\033[0m" << std::endl;
 }
 
 AMateria::AMateria(AMateria const &copy)
 {
-	std::cout << "AMateria copy constructor called" << std::endl;
+	std::cout << "\033[32mAMateria copy constructor called\033[0m" << std::endl;
 	*this = copy;
 }
 
 AMateria::~AMateria(void)
 {
-	std::cout << "AMateria destructor called" << std::endl;
+	std::cout << "\033[31mAMateria destructor called\033[0m" << std::endl;
 }
 
 
