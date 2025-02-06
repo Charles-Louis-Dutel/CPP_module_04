@@ -6,7 +6,7 @@
 /*   By: cdutel <cdutel@42student.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 10:20:45 by cdutel            #+#    #+#             */
-/*   Updated: 2025/01/06 16:09:48 by cdutel           ###   ########.fr       */
+/*   Updated: 2025/02/06 10:53:01 by cdutel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,13 @@ int main()
 {
 	IMateriaSource* src = new MateriaSource();
 
+	std::cout << std::endl;
 	src->learnMateria(new Ice());
 	src->learnMateria(new Ice());
 	src->learnMateria(new Cure());
 	src->learnMateria(new Cure());
 	src->learnMateria(new Ice());
-
+	std::cout << std::endl;
 
 	ICharacter* me = new Character("me");
 
@@ -72,8 +73,10 @@ int main()
 	tmp = src->createMateria("unexistant");
 	me->equip(tmp);
 
+	std::cout << std::endl;
 	me->unequip(2);
 	me->unequip(2);
+	std::cout << std::endl;
 
 	tmp = src->createMateria("cure");
 	me->equip(tmp);
